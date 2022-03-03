@@ -18,6 +18,18 @@ public class AverageNumber {
         avgTemp = total / 8;
         System.out.println(avgTemp);
 
+        System.out.println("total = " + total);
+        System.out.println("total = " + total);
+
+        System.out.println("total = " + total);
+
+        System.out.println("total = " + total);
+
+        System.out.println("total = " + total);
+        System.out.println("total = " + total);
+
+        System.out.println("total = " + total);
+
 
     }
 }
