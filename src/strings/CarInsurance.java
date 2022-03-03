@@ -7,15 +7,14 @@ public class CarInsurance {
     public static void main(String[] args) {
         //DO NOT CHANGE
         double premium = 0;
-        int accidentsAmount = 0;
-        int daysDrivenToWorkOrSchool = 0;
-        int milesToWorkOrSchool = 0;
-        String vehicleOwnership = "";
-        String vehicleUsage = "";
-        String continuousInsurance = "";
-        String education = "";
-        String name = "";
-        String referenceNumber = "";
+        int accidentsAmount;
+        int daysDrivenToWorkOrSchool;
+        int milesToWorkOrSchool;
+        String vehicleOwnership;
+        String vehicleUsage;
+        String continuousInsurance;
+        String education;
+        String name;
         Scanner scan = new Scanner(System.in);
         System.out.println("Welcome to the CountyFarm car insurance!");
         //WRITE YOUR CODE HERE
@@ -29,13 +28,10 @@ public class CarInsurance {
         String license = scan.nextLine();
 
 
-        switch (license) {
-
-            case "Yes":
-                break;
-            default:
-                System.out.println("Invalid data!");
-                System.exit(0);
+        if ("Yes".equals(license)) {
+        } else {
+            System.out.println("Invalid data!");
+            System.exit(0);
         }
 
 
@@ -56,13 +52,10 @@ public class CarInsurance {
 
         System.out.println("Is this vehicle Owned, Financed, or Leased?");
         vehicleOwnership = scan.nextLine();
-        switch (vehicleOwnership) {
-
-            case "Owned":
-                premium += 10;
-                break;
-            default:
-                premium += 20;
+        if ("Owned".equals(vehicleOwnership)) {
+            premium += 10;
+        } else {
+            premium += 20;
         }
 
 
@@ -99,11 +92,11 @@ public class CarInsurance {
         if (age < 16) {
             System.out.println("Invalid data!");
             System.exit(0);
-        } else if (age >= 16 && age < 18)
+        } else if (age < 18)
             premium *= 20;
-        else if (age >= 18 && age <= 21)
+        else if (age <= 21)
             premium *= 6;
-        else if (age > 21 && age < 25)
+        else if (age < 25)
             premium *= 2;
 
 
