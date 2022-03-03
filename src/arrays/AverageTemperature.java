@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Scanner;
 
-public class AverageNumber {
+public class AverageTemperature {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
