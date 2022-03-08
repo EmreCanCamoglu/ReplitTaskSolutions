@@ -20,8 +20,7 @@ public class Zombie_Attack1 {
             for (int j = 0; j < 8; j++) {
                 a = inhabitants[j];
                 inhabitants[j] /= 2;
-                if (a / 2 != 0)
-                    ++i;
+                if (a / 2 != 0) ++i;
             }
             h++;
             if (i == 0) {
